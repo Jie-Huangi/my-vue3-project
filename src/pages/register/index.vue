@@ -104,9 +104,11 @@ const handleRegister = () => {
       icon: 'success'
     })
     
-    // 注册成功后跳转到登录页
+    // 注册成功后跳转到首页
     setTimeout(() => {
-      uni.navigateBack()
+      uni.switchTab({
+        url: '/pages/index/index'
+      })
     }, 1500)
   }, 1500)
 }
@@ -228,4 +230,4 @@ page {
   color: #999;
   font-size: 40rpx;
 }
-</style> 
+</style>

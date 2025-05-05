@@ -89,10 +89,10 @@ const handleLogin = () => {
       icon: 'success'
     })
     
-    // 登录成功后跳转到备忘录页面
+    // 登录成功后跳转到首页
     setTimeout(() => {
-      uni.redirectTo({
-        url: '/pages/memo/index'
+      uni.switchTab({
+        url: '/pages/index/index'
       })
     }, 1500)
   }, 1500)
@@ -264,4 +264,4 @@ page {
   color: #b3b7ee;
   margin-left: 10rpx;
 }
-</style> 
+</style>
